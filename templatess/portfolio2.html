@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<!--<head>-->
+<!--  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">-->
+<!--  <meta name="description" content="Bingo One page parallax responsive HTML Template ">-->
+<!--  -->
+<!--  <meta name="author" content="Themefisher.com">-->
+
+<!--  <title>Bingo | Responsive Multipurpose Parallax HTML5 Template</title>-->
+
+<!--&lt;!&ndash; Mobile Specific Meta-->
+<!--  ================================================== &ndash;&gt;-->
+<!--  <meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--  -->
+<!--  &lt;!&ndash; Favicon &ndash;&gt;-->
+<!--  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />-->
+<!--  -->
+<!--  &lt;!&ndash; CSS-->
+<!--  ================================================== &ndash;&gt;-->
+<!--  &lt;!&ndash; RS5.0 Main Stylesheet &ndash;&gt;-->
+<!--  <link rel="stylesheet" type="text/css" href="plugins/revo-slider/css/settings.css">-->
+<!--  &lt;!&ndash; RS5.0 Layers and Navigation Styles &ndash;&gt;-->
+<!--  <link rel="stylesheet" type="text/css" href="plugins/revo-slider/css/layers.css">-->
+<!--  <link rel="stylesheet" type="text/css" href="plugins/revo-slider/css/navigation.css">-->
+<!--  &lt;!&ndash; REVOLUTION STYLE SHEETS &ndash;&gt;-->
+<!--  <link rel="stylesheet" type="text/css" href="plugins/revo-slider/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">-->
+<!--  <link rel="stylesheet" type="text/css" href="plugins/revo-slider/fonts/font-awesome/css/font-awesome.min.css">-->
+<!--  <link rel="stylesheet" type="text/css" href="plugins/revo-slider/css/settings.css">-->
+<!--  <link rel="stylesheet" type="text/css" href="plugins/revo-slider/css/layers.css">-->
+<!--  <link rel="stylesheet" type="text/css" href="plugins/revo-slider/css/navigation.css"> -->
+<!--  &lt;!&ndash; Themefisher Icon font &ndash;&gt;-->
+<!--  <link rel="stylesheet" href="plugins/themefisher-font/style.css">-->
+<!--  &lt;!&ndash; bootstrap.min css &ndash;&gt;-->
+<!--  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">-->
+<!--  &lt;!&ndash; Lightbox.min css &ndash;&gt;-->
+<!--  <link rel="stylesheet" href="plugins/lightbox2/dist/css/lightbox.min.css">-->
+<!--  &lt;!&ndash; Slick Carousel &ndash;&gt;-->
+<!--  <link rel="stylesheet" href="plugins/slick-carousel/slick/slick.css">-->
+<!--  <link rel="stylesheet" href="plugins/slick-carousel/slick/slick-theme.css">-->
+<!--  &lt;!&ndash; Main Stylesheet &ndash;&gt;-->
+<!--  <link rel="stylesheet" href="css/style.css">-->
+
+
+<!--  &lt;!&ndash; Colors &ndash;&gt;-->
+<!--  <link rel="stylesheet" type="text/css" href="css/colors/green.css" title="green">-->
+<!--  <link rel="stylesheet" type="text/css" href="css/colors/red.css" title="light-red">-->
+<!--  <link rel="stylesheet" type="text/css" href="css/colors/blue.css" title="blue">-->
+<!--  <link rel="stylesheet" type="text/css" href="css/colors/light-blue.css" title="light-blue">-->
+<!--  <link rel="stylesheet" type="text/css" href="css/colors/yellow.css" title="yellow">-->
+<!--  <link rel="stylesheet" type="text/css" href="css/colors/light-green.css" title="light-green">-->
+<!--  -->
+
+<!--</head>-->
+
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="Bingo One page parallax responsive HTML Template ">
+
+  <meta name="author" content="Themefisher.com">
+
+  <title>Bingo | Responsive Multipurpose Parallax HTML5 Template</title>
+
+<!-- Mobile Specific Meta
+  ================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="{{url_for('static',filename='img/favicon.png') }}" />
+
+  <!-- CSS
+  ================================================== -->
+  <!-- RS5.0 Main Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='plugins/revo-slider/css/settings.css') }}">
+  <!-- RS5.0 Layers and Navigation Styles -->
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='plugins/revo-slider/css/layers.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='plugins/revo-slider/css/navigation.css') }}">
+  <!-- REVOLUTION STYLE SHEETS -->
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='plugins/revo-slider/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='plugins/revo-slider/fonts/font-awesome/css/font-awesome.min.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='plugins/revo-slider/css/settings.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='plugins/revo-slider/css/layers.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='plugins/revo-slider/css/navigation.css') }}">
+  <!-- Themefisher Icon font -->
+  <link rel="stylesheet" href="{{url_for('static',filename='plugins/themefisher-font/style.css') }}">
+  <!-- bootstrap.min css -->
+  <link rel="stylesheet" href="{{url_for('static',filename='plugins/bootstrap/css/bootstrap.min.css') }}">
+  <!-- Lightbox.min css -->
+  <link rel="stylesheet" href="{{url_for('static',filename='plugins/lightbox2/dist/css/lightbox.min.css') }}">
+  <!-- Slick Carousel -->
+  <link rel="stylesheet" href="{{url_for('static',filename='plugins/slick-carousel/slick/slick.css') }}">
+  <link rel="stylesheet" href="{{url_for('static',filename='plugins/slick-carousel/slick/slick-theme.css') }}">
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="{{url_for('static',filename='css/style.css') }}">
+
+
+  <!-- Colors -->
+  <link rel="stylesheet" type="text/css" href="css/colors/green.css" title="green">
+  <link rel="stylesheet" type="text/css" href="css/colors/red.css" title="light-red">
+  <link rel="stylesheet" type="text/css" href="css/colors/blue.css" title="blue">
+  <link rel="stylesheet" type="text/css" href="css/colors/light-blue.css" title="light-blue">
+  <link rel="stylesheet" type="text/css" href="css/colors/yellow.css" title="yellow">
+  <link rel="stylesheet" type="text/css" href="css/colors/light-green.css" title="light-green">
+
+
+</head>
+
+<body id="body">
+
+ <!--
+  Start Preloader
+  ==================================== -->
+  <div id="preloader">
+    <div class='preloader'>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <!--
+  End Preloader
+  ==================================== -->
+
+
+
+
+<!--
+Fixed Navigation
+==================================== -->
+<header class="navigation navbar navbar-fixed-top">
+   <div class="container">
+      <div class="navbar-header">
+         <!-- responsive nav button -->
+         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+         <span class="sr-only">Toggle navigation</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         </button>
+         <!-- /responsive nav button -->
+         <!-- logo -->
+         <a class="navbar-brand logo" href="index.html">
+            <img class="logo-default" src="static/images/logo2.png" alt="logo" />
+            <img class="logo-white" src="static/images/logo3.png" alt="logo" />
+         </a>
+         <!-- /logo -->
+      </div>
+      <!-- main nav -->
+      <nav class="collapse navbar-collapse navbar-right">
+         <ul id="nav" class="nav navbar-nav menu">
+<!--               <li class="dropdown">-->
+<!--                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Homepage <span class="caret"></span></a>-->
+<!--                  <ul class="dropdown-menu">-->
+                     <li><a href="/">Homepage</a></li>
+<!--                     <li><a href="index-text.html">Homepage 2</a></li>-->
+<!--                     <li><a href="onepage-slider.html">Onepage</a></li>-->
+<!--                     <li><a href="onepage-text.html">Onepage 2</a></li>-->
+<!--                  </ul>-->
+<!--               </li>-->
+<!--               <li><a href="about.html">About Us</a></li>-->
+<!--               <li><a href="service.html">Services</a></li>-->
+<!--               <li><a href="portfolio.html">Portfolio</a></li>-->
+               <li><a href="/roster">Brothers</a></li>
+<!--               <li><a href="pricing.html">Pricing</a></li>-->
+<!--               <li><a href="contact.html">Contact</a></li>-->
+<!--               <li class="dropdown">-->
+<!--                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>-->
+<!--                  <ul class="dropdown-menu">-->
+<!--                     <li><a href="404.html">404 Page</a></li>-->
+<!--                     <li><a href="blog.html">Blog Page</a></li>-->
+<!--                  </ul>-->
+<!--               </li>-->
+            </li>
+         </ul>
+      </nav>
+      <!-- /main nav -->
+   </div>
+</header>
+<!--
+End Fixed Navigation
+==================================== -->
+
+<section class="single-page-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Portfolio</h2>
+				<ol class="breadcrumb header-bradcrumb">
+				  <li><a href="/brothers">active house</a></li>
+				  <li class="active">roster</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- Start Counter Section-->
+<!--		==================================== &ndash;&gt;-->
+
+		<section  class="counter-wrapper section-sm" >
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<div class="title">
+							<h2>Pi Chapter Roster</h2>
+							<p>Vestibulum nisl tortor, consectetur quis imperdiet bibendum, laoreet sed arcu. Sed condimentum iaculis ex, in faucibus lorem accumsan non. Donec mattis tincidunt metus. Morbi sed tortor a risus luctus dignissim.</p>
+						</div>
+					</div>
+					<!-- first count item -->
+<!--                    {% for item in listofclasses %}-->
+<!--					<div class="col-md-2 col-sm-6 col-xs-6 text-center " >-->
+<!--&lt;!&ndash;						<div class="counters-item">&ndash;&gt;-->
+<!--&lt;!&ndash;							<i class="tf-ion-ios-alarm-outline"></i>&ndash;&gt;-->
+
+<!--							<div>-->
+<!--							    <h3>{{ item }}</h3>-->
+<!--							</div>-->
+<!--&lt;!&ndash;							<h3>Happy Clients</h3>&ndash;&gt;-->
+<!--                            {% for list_ in roster %}-->
+<!--                            {% if list_.classname == item %}-->
+<!--                            <li class="dropdown">-->
+<!--                                <p class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{list_.name}}</p>-->
+<!--                                  <ul class="dropdown-menu">-->
+<!--                                     <li>{{list_.home}}</li>-->
+<!--                                     <li>{{list_.major}}</li>-->
+<!--                                     <li>{{list_.uji}}</li>-->
+<!--                                     <li>{{list_.classnumber}}</li>-->
+<!--                                  </ul>-->
+<!--                           </li>-->
+<!--                            {% endif %}-->
+<!--                            {% endfor %}-->
+
+
+
+<!--&lt;!&ndash;						</div>&ndash;&gt;-->
+<!--					</div>-->
+<!--                    {% endfor %}-->
+					<!-- end first count item -->
+
+					<!-- second count item -->
+<!--					<div class="col-md-3 col-sm-6 col-xs-6 text-center " >-->
+<!--						<div class="counters-item">-->
+<!--							<i class="tf-ion-ios-analytics-outline"></i>-->
+<!--							<div>-->
+<!--							    <span class="counter" data-count="130">130</span>-->
+<!--							</div>-->
+<!--							<h3>Projects completed</h3>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--					&lt;!&ndash; end second count item &ndash;&gt;-->
+
+<!--					&lt;!&ndash; third count item &ndash;&gt;-->
+<!--					<div class="col-md-3 col-sm-6 col-xs-6 text-center "  >-->
+<!--						<div class="counters-item">-->
+<!--							<i class="tf-ion-ios-compose-outline"></i>-->
+<!--							<div>-->
+<!--							    <span class="counter" data-count="99">99</span>-->
+<!--							</div>-->
+<!--				            <h3>Positive feedback</h3>-->
+
+<!--						</div>-->
+<!--					</div>-->
+<!--					&lt;!&ndash; end third count item &ndash;&gt;-->
+
+<!--					&lt;!&ndash; fourth count item &ndash;&gt;-->
+<!--					<div class="col-md-3 col-sm-6 col-xs-6 text-center ">-->
+<!--						<div class="counters-item kill-border">-->
+<!--							<i class="tf-ion-ios-bolt-outline"></i>-->
+<!--							<div>-->
+<!--							    <span class="counter" data-count="250">250</span>-->
+<!--							</div>-->
+<!--							<h3>Cups of Coffee</h3>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--					&lt;!&ndash; end fourth count item &ndash;&gt;-->
+
+
+
+				</div> 		<!-- end row -->
+			</div>   	<!-- end container -->
+		</section>   <!-- end section -->
+
+
+        {% for listofclass in listlistofclasses %}
+        <section  class="counter-wrapper section-sm" data-textAlign="center">
+			<div class="container">
+				<div class="row">
+                    <!-- first count item -->
+                    {% for item in listofclass %}
+					<div class="col-md-3 col-sm-6 col-xs-6 text-center " >
+<!--						<div class="counters-item">-->
+<!--							<i class="tf-ion-ios-alarm-outline"></i>-->
+
+							<div>
+							    <h3>{{ item }}</h3>
+							</div>
+<!--							<h3>Happy Clients</h3>-->
+                            {% for list_ in roster %}
+                            {% if list_.classname == item %}
+                            <li class="dropdown">
+                                <p class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{list_.fullname}}</p>
+                                  <ul class="dropdown-menu">
+                                     <li>{{list_.home}}</li>
+                                     <li>{{list_.major}}</li>
+                                     <li>{{list_.uji}}</li>
+                                     <li>{{list_.classnumber}}</li>
+                                  </ul>
+                           </li>
+                            {% endif %}
+                            {% endfor %}
+
+
+
+<!--						</div>-->
+					</div>
+                    {% endfor %}
+
+
+                </div> 		<!-- end row -->
+			</div>   	<!-- end container -->
+		</section>
+        {% endfor %}
+
+
+
+
+
+
+<!--&lt;!&ndash; Start Portfolio Section-->
+<!--		=========================================== &ndash;&gt;-->
+
+<!--		<section class="portfolio section-sm" id="portfolio">-->
+<!--			<div class="container-fluid">-->
+<!--				<div class="row " >-->
+<!--					<div class="col-lg-12">-->
+
+<!--						&lt;!&ndash; section title &ndash;&gt;-->
+<!--						<div class="title text-center">-->
+<!--							<h2>Our Works</h2>-->
+<!--							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, veritatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, vitae? </p>-->
+<!--							<div class="border"></div>-->
+<!--						</div>-->
+<!--						&lt;!&ndash; /section title &ndash;&gt;-->
+
+<!--						<div class="portfolio-filter">-->
+<!--							<button type="button" data-filter="all">All</button>-->
+<!--							<button type="button" data-filter=".photography">Photography</button>-->
+<!--							<button type="button" data-filter=".ios">IOS App</button>-->
+<!--							<button type="button" data-filter=".development">Development</button>-->
+<!--							<button type="button" data-filter=".design">Design</button>-->
+<!--						</div>-->
+
+
+
+
+<!--						<div class="portfolio-items-wrapper">-->
+<!--							<div class="row">-->
+<!--								{% if para == "design" %}-->
+<!--								<div class="col-md-3 col-sm-6 col-xs-6 mix {{para}}" >-->
+<!--							    	<div class="portfolio-block">-->
+<!--							    		<img class="img-responsive" src="{{url_for('static', filename='images/portfolio/profile_pic.jpg') }}" alt="">-->
+<!--							    		<div class="caption">-->
+<!--&lt;!&ndash;							    			<a class="search-icon" href="images/portfolio/portfolio-1.jpg" data-lightbox="image-1">&ndash;&gt;-->
+<!--&lt;!&ndash;							    				<i class="tf-ion-ios-search-strong"></i>&ndash;&gt;-->
+<!--&lt;!&ndash;								    		</a>&ndash;&gt;-->
+<!--&lt;!&ndash;							    			<h4><a href="">AirBnB Postcard</a></h4>&ndash;&gt;-->
+<!--											<h4> <a href="#">Tommy Nguyen</a></h4>-->
+<!--											<h4> <a href="#">Alpha Tau Fall 16</a></h4>-->
+<!--							    		</div>-->
+<!--							    	</div>-->
+<!--							    </div>-->
+<!--								{% endif %}-->
+<!--							    <div class="col-md-3 col-sm-6 col-xs-6 mix design ios" >-->
+<!--							    	<div class="portfolio-block">-->
+<!--								    	<img class="img-responsive" src="static/images/portfolio/portfolio-2.jpg" alt="">-->
+<!--							    		<div class="caption">-->
+<!--							    			<a class="search-icon" href="images/portfolio/portfolio-1.jpg" data-lightbox="image-1">-->
+<!--							    				<i class="tf-ion-ios-search-strong"></i>-->
+<!--								    		</a>-->
+<!--							    			<h4><a href="">AirBnB Postcard</a></h4>-->
+<!--							    		</div>-->
+<!--							    	</div>-->
+<!--							    </div>-->
+<!--							    <div class="col-md-3 col-sm-6 col-xs-6 mix photography development" >-->
+<!--							    	<div class="portfolio-block">-->
+<!--								    	<img class="img-responsive" src="images/portfolio/portfolio-3.jpg" alt="">-->
+<!--							    		<div class="caption">-->
+<!--							    			<a class="search-icon" href="images/portfolio/portfolio-1.jpg" data-lightbox="image-1">-->
+<!--							    				<i class="tf-ion-ios-search-strong"></i>-->
+<!--								    		</a>-->
+<!--							    			<h4><a href="">AirBnB Postcard</a></h4>-->
+<!--							    		</div>-->
+<!--							    	</div>-->
+<!--							    </div>-->
+<!--							    <div class="col-md-3 col-sm-6 col-xs-6 mix photography ios" >-->
+<!--							    	<div class="portfolio-block">-->
+<!--								    	<img class="img-responsive" src="images/portfolio/portfolio-4.jpg" alt="">-->
+<!--							    		<div class="caption">-->
+<!--							    			<a class="search-icon" href="images/portfolio/portfolio-1.jpg" data-lightbox="image-1">-->
+<!--							    				<i class="tf-ion-ios-search-strong"></i>-->
+<!--								    		</a>-->
+<!--							    			<h4><a href="">AirBnB Postcard</a></h4>-->
+<!--							    		</div>-->
+<!--							    	</div>-->
+<!--							    </div>-->
+<!--							    <div class="col-md-3 col-sm-6 col-xs-6 mix design">-->
+<!--							    	<div class="portfolio-block">-->
+<!--								    	<img class="img-responsive" src="images/portfolio/portfolio-5.jpg" alt="">-->
+<!--							    		<div class="caption">-->
+<!--							    			<a class="search-icon" href="images/portfolio/portfolio-1.jpg" data-lightbox="image-1">-->
+<!--							    				<i class="tf-ion-ios-search-strong"></i>-->
+<!--								    		</a>-->
+<!--							    			<h4><a href="">AirBnB Postcard</a></h4>-->
+<!--							    		</div>-->
+<!--							    	</div>-->
+<!--							    </div>-->
+<!--							    <div class="col-md-3 col-sm-6 col-xs-6 mix design development">-->
+<!--							    	<div class="portfolio-block">-->
+<!--								    	<img class="img-responsive" src="images/portfolio/portfolio-6.jpg" alt="">-->
+<!--							    		<div class="caption">-->
+<!--							    			<a class="search-icon" href="images/portfolio/portfolio-1.jpg" data-lightbox="image-1">-->
+<!--							    				<i class="tf-ion-ios-search-strong"></i>-->
+<!--								    		</a>-->
+<!--							    			<h4><a href="">AirBnB Postcard</a></h4>-->
+<!--							    		</div>-->
+<!--							    	</div>-->
+<!--							    </div>-->
+<!--							    <div class="col-md-3 col-sm-6 col-xs-6 mix photography">-->
+<!--							    	<div class="portfolio-block">-->
+<!--								    	<img class="img-responsive" src="images/portfolio/portfolio-7.jpg" alt="">-->
+<!--							    		<div class="caption">-->
+<!--							    			<a class="search-icon" href="images/portfolio/portfolio-1.jpg" data-lightbox="image-1">-->
+<!--							    				<i class="tf-ion-ios-search-strong"></i>-->
+<!--								    		</a>-->
+<!--							    			<h4><a href="">AirBnB Postcard</a></h4>-->
+<!--							    		</div>-->
+<!--							    	</div>-->
+<!--							    </div>-->
+<!--							    <div class="col-md-3 col-sm-6 col-xs-6 mix design development">-->
+<!--							    	<div class="portfolio-block">-->
+<!--								    	<img class="img-responsive" src="images/portfolio/portfolio-1.jpg" alt="">-->
+<!--							    		<div class="caption">-->
+<!--							    			<a class="search-icon" href="images/portfolio/portfolio-1.jpg" data-lightbox="image-1">-->
+<!--							    				<i class="tf-ion-ios-search-strong"></i>-->
+<!--								    		</a>-->
+<!--							    			<h4><a href="">AirBnB Postcard</a></h4>-->
+<!--							    		</div>-->
+<!--							    	</div>-->
+<!--							    </div>-->
+<!--							</div>-->
+<!--						</div>-->
+
+<!--					</div> &lt;!&ndash; /end col-lg-12 &ndash;&gt;-->
+<!--				</div> &lt;!&ndash; end row &ndash;&gt;-->
+<!--			</div>	&lt;!&ndash; end container &ndash;&gt;-->
+<!--		</section>   &lt;!&ndash; End section &ndash;&gt;-->
+
+
+
+
+<!--	<section class="buy-pro" style="padding: 100px 0;">-->
+
+<!--	<div class="container">-->
+<!--		<div class="row">-->
+<!--			<div class="col-md-8 col-md-offset-2">-->
+<!--				<div class="pro-block text-center" style="padding: 20px 50px; background: white; box-shadow: 0px 2px 28px 0px #7777775e; border-radius: 5px;">-->
+<!--					<h2 style="font-size: 25px; line-height: 1;">You have downloaded free version of Bingo.</h2>-->
+<!--					<h4 style="padding: 10px 0 15px 0;">To get full access of this page please purchase the premium version</h4>-->
+<!--					<h4>Why Premium?</h4>-->
+<!--					<ul style="margin-bottom: 20px;">-->
+<!--						<li>Full Template Pack</li>-->
+<!--						<li>Priority Support</li>-->
+<!--						<li>Documentation Included</li>-->
+<!--						<li>Monthly Update</li>-->
+<!--						<li>Lifetime Download</li>-->
+<!--						<li>Personal and commercial Use</li>-->
+<!--						<li>One time payment</li>-->
+<!--					</ul>-->
+<!--					<a href="https://themefisher.com/products/bingo-bootstrap-business-template/" target="_blank" class="btn btn-main" style="margin-bottom: 20px;">Buy Premium Version</a>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--</section>-->
+
+
+<!--<footer id="footer" class="bg-one">-->
+<!--  <div class="top-footer">-->
+<!--    <div class="container">-->
+<!--      <div class="row">-->
+<!--        <div class="col-sm-3 col-md-3 col-lg-3">-->
+<!--          <h3>about</h3>-->
+<!--          <p>Integer posuere erat a ante venenati dapibus posuere velit aliquet. Fusce dapibus, tellus cursus commodo, tortor mauris sed posuere.</p>-->
+<!--        </div>-->
+<!--        &lt;!&ndash; End of .col-sm-3 &ndash;&gt;-->
+
+<!--        <div class="col-sm-3 col-md-3 col-lg-3">-->
+<!--          <ul>-->
+<!--            <li><h3>Our Services</h3></li>-->
+<!--            <li><a href="#">Graphic Design</a></li>-->
+<!--            <li><a href="#">Web Design</a></li>-->
+<!--            <li><a href="#">Web Development</a></li>-->
+<!--          </ul>-->
+<!--        </div>-->
+<!--        &lt;!&ndash; End of .col-sm-3 &ndash;&gt;-->
+
+<!--        <div class="col-sm-3 col-md-3 col-lg-3">-->
+<!--          <ul>-->
+<!--            <li><h3>Quick Links</h3></li>-->
+<!--            <li><a href="#">Partners</a></li>-->
+<!--            <li><a href="#">About</a></li>-->
+<!--            <li><a href="#">FAQ’s</a></li>-->
+<!--            <li><a href="#">Badges</a></li>-->
+<!--          </ul>-->
+<!--        </div>-->
+<!--        &lt;!&ndash; End of .col-sm-3 &ndash;&gt;-->
+
+<!--        <div class="col-sm-3 col-md-3 col-lg-3">-->
+<!--          <ul>-->
+<!--            <li><h3>Connect with us Socially</h3></li>-->
+<!--            <li><a href="#">Facebook</a></li>-->
+<!--            <li><a href="#">Twitter</a></li>-->
+<!--            <li><a href="#">Youtube</a></li>-->
+<!--            <li><a href="#">Pinterest</a></li>-->
+<!--          </ul>-->
+<!--        </div>-->
+<!--        &lt;!&ndash; End of .col-sm-3 &ndash;&gt;-->
+
+<!--      </div>-->
+<!--    </div> &lt;!&ndash; end container &ndash;&gt;-->
+<!--  </div>-->
+<!--  <div class="footer-bottom">-->
+<!--    <h5>Copyright 2016. All rights reserved.</h5>-->
+<!--    <h6>Design and Developed by <a href="">Themefisher</a></h6>-->
+<!--  </div>-->
+<!--</footer> &lt;!&ndash; end footer &ndash;&gt;-->
+
+
+    <!-- end Footer Area
+    ========================================== -->
+
+
+
+<!--    &lt;!&ndash; -->
+<!--    Essential Scripts-->
+<!--    =====================================&ndash;&gt;-->
+<!--    &lt;!&ndash; Main jQuery &ndash;&gt;-->
+<!--    <script src="plugins/jquery/dist/jquery.min.js"></script>-->
+<!--    &lt;!&ndash; Google Map &ndash;&gt;-->
+<!--    &lt;!&ndash; Google Map &ndash;&gt;-->
+<!--    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw"></script>-->
+<!--    <script  src="plugins/google-map/gmap.js"></script>-->
+<!--    &lt;!&ndash; Bootstrap 3.7 &ndash;&gt;-->
+<!--    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>-->
+<!--    &lt;!&ndash; Parallax &ndash;&gt;-->
+<!--    <script src="plugins/parallax/jquery.parallax-1.1.3.js"></script>-->
+<!--    &lt;!&ndash; lightbox &ndash;&gt;-->
+<!--    <script src="plugins/lightbox2/dist/js/lightbox.min.js"></script>-->
+<!--    &lt;!&ndash; Owl Carousel &ndash;&gt;-->
+<!--    <script src="plugins/slick-carousel/slick/slick.min.js"></script>-->
+<!--    &lt;!&ndash; Portfolio Filtering &ndash;&gt;-->
+<!--    <script src="plugins/mixitup/dist/mixitup.min.js"></script>-->
+<!--    &lt;!&ndash; Smooth Scroll js &ndash;&gt;-->
+<!--    <script src="plugins/smooth-scroll/dist/js/smooth-scroll.min.js"></script>-->
+<!--    -->
+<!--    &lt;!&ndash; Custom js &ndash;&gt;-->
+<!--    <script src="js/script.js"></script>-->
+
+
+		<!--
+    Essential Scripts
+    =====================================-->
+    <!-- Main jQuery -->
+    <script src="{{url_for('static',filename='plugins/jquery/dist/jquery.min.js') }}"></script>
+    <!-- Google Map -->
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw"></script>
+    <script  src="{{url_for('static',filename='plugins/google-map/gmap.js') }}"></script>
+    <!-- Bootstrap 3.7 -->
+    <script src="{{url_for('static',filename='plugins/bootstrap/js/bootstrap.min.js') }}"></script>
+    <!-- Parallax -->
+    <script src="{{url_for('static',filename='plugins/parallax/jquery.parallax-1.1.3.js') }}"></script>
+    <!-- lightbox -->
+    <script src="{{url_for('static',filename='plugins/lightbox2/dist/js/lightbox.min.js') }}"></script>
+    <!-- Owl Carousel -->
+    <script src="{{url_for('static',filename='plugins/slick-carousel/slick/slick.min.js') }}"></script>
+    <!-- Portfolio Filtering -->
+    <script src="{{url_for('static',filename='plugins/mixitup/dist/mixitup.min.js') }}"></script>
+    <!-- Smooth Scroll js -->
+    <script src="{{url_for('static',filename='plugins/smooth-scroll/dist/js/smooth-scroll.min.js') }}"></script>
+
+    <!-- Custom js -->
+    <script src="{{url_for('static',filename='js/script.js') }}"></script>
+
+  </body>
+  </html>
