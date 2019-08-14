@@ -1,19 +1,25 @@
-from flask import Flask, render_template, request
+# from flask import Flask, render_template, request
 import psycopg2 as p
-import urllib.request
-import os
-import logging
+# from urllib.parse import urlparse
+from flask import Flask, render_template, url_for
+from flask_sqlalchemy import SQLAlchemy
+import sys
+import json
+from flask_heroku import Heroku
 
 
 app=Flask(__name__,template_folder='templatess')
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+heroku = Heroku(app)
+db = SQLAlchemy(app)
 
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://localhost/uhlambdas'
 
 #
 DATABASE_URL = 'postgres://vzlsmgwdevondl:3d45454fca2fa021a2708be80f40f8b1bbc56135ff72655a14edb63828f807a9@ec2-54-243-241-62.compute-1.amazonaws.com:5432/deec1b0jthkvgs'
 
-print(DATABASE_URL)
-conn=p.connect(DATABASE_URL,host='ec2-54-243-241-62.compute-1.amazonaws.com',dbname='deec1b0jthkvgs',port='5432')
+# print(DATABASE_URL)
+conn=p.connect(host='localhost',dbname='uhlambdas')
 
 cur=conn.cursor()
 
