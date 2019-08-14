@@ -2,10 +2,12 @@ from flask import Flask, render_template, request
 import psycopg2 as p
 import urllib.request
 import os
-
+import logging
 
 
 app=Flask(__name__,template_folder='templatess')
+app.logger.addHandler(logging.StreamHandler(sys.stdout))
+app.logger.setLevel(logging.ERROR)
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://localhost/uhlambdas'
 
 #
@@ -45,7 +47,7 @@ def protfolio():
     classnumbers = []
     roster = []
 
-    cur.execute('SELECT classname,id FROM roster.active_member')
+    cur.execute('SELECT classname,id FROM roster.active_member;')
 
     l = cur.fetchall()
 
@@ -55,7 +57,7 @@ def protfolio():
             if i[0] not in classnames:
                 classnames.append(i[0])
 
-    cur.execute('SELECT * FROM roster.active_member WHERE id >= 241')
+    cur.execute('SELECT * FROM roster.active_member WHERE id >= 241;')
 
     k = cur.fetchall()
 
@@ -69,7 +71,7 @@ def protfolio():
 @app.route('/roster')
 def roster():
 
-    cur.execute('SELECT classname FROM roster.active_member')
+    cur.execute('SELECT classname FROM roster.active_member;')
 
     names = cur.fetchall()
 
@@ -89,7 +91,7 @@ def roster():
             classlist.append(listing)
             listing = []
 
-    cur.execute('SELECT * FROM roster.active_member')
+    cur.execute('SELECT * FROM roster.active_member;')
 
     listing = cur.fetchall()
     listofdict = []
