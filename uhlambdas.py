@@ -1,12 +1,12 @@
-from flask import Flask
-from flask import request
-from flask import render_template
+from flask import Flask, render_template, request
 import psycopg2 as p
 import urllib.request
 import os
 
 
 app=Flask(__name__,template_folder='templatess')
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://localhost/uhlambdas'
+
 #
 conn=p.connect(host='localhost',dbname='uhlambdas')
 
