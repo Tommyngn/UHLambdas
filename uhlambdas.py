@@ -5,10 +5,11 @@ import os
 
 
 app=Flask(__name__,template_folder='templatess')
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://localhost/uhlambdas'
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://localhost/uhlambdas'
 
 #
-conn=p.connect(host='localhost',dbname='uhlambdas')
+DATABASE_URL = os.environ['DATABASE_URL']
+conn=p.connect(DATABASE_URL,sslmode='require',host='localhost',dbname='uhlambdas')
 
 cur=conn.cursor()
 
