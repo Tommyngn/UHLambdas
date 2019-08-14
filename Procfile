@@ -1,1 +1,1 @@
-web: gunicorn uhlambdas.com:app
+web: gunicorn uhlambdas:app
