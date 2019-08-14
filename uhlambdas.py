@@ -12,7 +12,7 @@ app=Flask(__name__,template_folder='templatess')
 DATABASE_URL = 'postgres://vzlsmgwdevondl:3d45454fca2fa021a2708be80f40f8b1bbc56135ff72655a14edb63828f807a9@ec2-54-243-241-62.compute-1.amazonaws.com:5432/deec1b0jthkvgs'
 
 print(DATABASE_URL)
-conn=p.connect(DATABASE_URL,host='localhost',dbname='uhlambdas')
+conn=p.connect(DATABASE_URL,host='ec2-54-243-241-62.compute-1.amazonaws.com',dbname='deec1b0jthkvgs',port='5432')
 
 cur=conn.cursor()
 
