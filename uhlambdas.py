@@ -16,10 +16,10 @@ db = SQLAlchemy(app)
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://localhost/uhlambdas'
 
 #
-DATABASE_URL = 'postgres://niehnerzzlyhai:bec06179c4b6a8cf8da65fa000bc2ce7224f36ed46e9c9b82cbde73b3b8a42e8@ec2-54-227-245-146.compute-1.amazonaws.com:5432/dp5t95bsg9ngf'
+DATABASE_URL = 'postgres://nsbpiscncggxco:b91fc1391fda3c0ea341a8fba974f23db4b25f09e0a70a277f895fd0ce900315@ec2-54-83-13-145.compute-1.amazonaws.com:5432/dqkci05uaqirq'
 
 # print(DATABASE_URL)
-conn=p.connect(DATABASE_URL,password='b91fc1391fda3c0ea341a8fba974f23db4b25f09e0a70a277f895fd0ce900315')
+conn=p.connect(DATABASE_URL)
 
 cur=conn.cursor()
 
