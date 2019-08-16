@@ -19,9 +19,41 @@ db = SQLAlchemy(app)
 DATABASE_URL = 'postgres://niehnerzzlyhai:bec06179c4b6a8cf8da65fa000bc2ce7224f36ed46e9c9b82cbde73b3b8a42e8@ec2-54-227-245-146.compute-1.amazonaws.com:5432/dp5t95bsg9ngf'
 
 # print(DATABASE_URL)
-conn=p.connect(DATABASE_URL)
+conn=p.connect(DATABASE_URL,password='b91fc1391fda3c0ea341a8fba974f23db4b25f09e0a70a277f895fd0ce900315')
 
 cur=conn.cursor()
+
+
+# cur.execute('SELECT classname FROM roster.active_member ORDER BY id;')
+#
+# names = cur.fetchall()
+
+# classlist = []
+# listing = []
+# string_ = ''
+# for pos1, i in enumerate(names):
+#     for pos2, j in enumerate(i):
+#         # print(listing)
+#         if str(j) not in listing and str(j) != string_:
+#             listing.append(j)
+#             if len(listing) == 4:
+#                 classlist.append(listing)
+#                 listing = []
+#                 string_ = str(j)
+#     if pos1 == len(names) - 1:
+#         classlist.append(listing)
+#         listing = []
+# for i in classlist:
+#     print(i)
+#
+# cur.execute('SELECT * FROM roster.active_member;')
+#
+# listing = cur.fetchall()
+# listofdict = []
+#
+# for pos1, i in enumerate(listing):
+#     dict = {'fullname': i[0], 'major': i[1], 'home': i[2], 'uji': i[3], 'classname': i[4], 'classnumber': i[5]}
+#     listofdict.append(dict)
 
 
 
@@ -111,5 +143,5 @@ def roster():
 #
 #
 #
-if __name__=='__main__':
-    app.run(debug=True)
+# if __name__=='__main__':
+#     app.run(debug=True)
