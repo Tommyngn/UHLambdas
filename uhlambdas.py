@@ -73,7 +73,7 @@ def protfolio():
 @app.route('/roster')
 def roster():
 
-    cur.execute('SELECT classname FROM roster.active_member;')
+    cur.execute('SELECT classname FROM roster.active_member ORDER BY id;')
 
     names = cur.fetchall()
 
