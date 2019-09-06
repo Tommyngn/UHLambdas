@@ -1,17 +1,23 @@
 import csv
 import psycopg2 as p
 import os
+import csv
+from check_info_functions import check_uji,check_id,check_classname,check_fullname
 
 conn=p.connect(host='localhost',dbname='uhlambdas')
 curr=conn.cursor()
 
+curr.execute('SELECT ujiname FROM roster.uji')
 
-l=os.listdir('static/images/actives')
+list_=curr.fetchall()
+uji_list=[]
 
-for i in l:
-    query='UPDATE roster.active_member SET picture=%s WHERE id= %s; '
-    curr.execute(query,['yes',int(i)])
-    conn.commit()
+for i in list_:
+    for j in i:
+        uji_list.append(str(j))
+        uji_list.append(str(j).lower())
+
+
 
 
 
